@@ -42,8 +42,8 @@
   .avatar {
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    -webkit-box-shadow: 0 4px 2px 3px #48ee06 , 0 2px 5px 8px rgb(41, 174, 26);
-    box-shadow: 0 0 0 3px #031891 , 0 0 0 8px rgb(151, 58, 58);
+    -webkit-box-shadow: 0 4px 2px 3px #48ee06 , 0 2px 8px 10px #3ee228;;
+    box-shadow: 0 0 0 3px #48ee06 , 0 0 0 8px #990000;
     top: -75px;
     margin-left: -75px;
     left: 50%;
