@@ -1,7 +1,18 @@
-.container {
+
+
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+
+
+.navbar-container {
     max-width: 1200px;
     width: 90%;
-    margin: auto;
+    /* margin: auto; */
+    /* margin-bottom: 200%; */
   }
   
   .btn {
@@ -37,20 +48,21 @@
   
   .navbar {
     box-shadow: 0px 5px 10px 0px #aaa;
-    position: fixed;
+    margin-bottom: 275px;
+    position: relative;
     width: 100%;
     background: #fff;
-    color: #000;
+    color: #d00606;
     opacity: 0.85;
     height: 50px;
-    z-index: 12;
+    z-index: 1;
     padding: 1%;
   }
   
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    height: 64px;
+    height: 60px;
     align-items: center;
   }
   
@@ -68,8 +80,8 @@
   
   .menu-items a {
     text-decoration: none;
-    color: #444;
-    font-weight: 500;
+    color: #d00606;
+    font-weight: 800;
     transition: color 0.3s ease-in-out;
   }
   
