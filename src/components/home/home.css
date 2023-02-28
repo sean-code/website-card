@@ -1,40 +1,13 @@
-.wrapper {
-    height: 10%;
-    width: 10%;
-}
+
 
 .wrapper {
     width: 100%;
     height:100%;
-    background: linear-gradient(-45deg, #0a9ef3, #53b910, #1894c5, rgb(66, 197, 5));
-    background-size: 400% 400%;
+    background: #fff;
     animation: gradient 15s ease infinite;
   }
-  @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-  }
-  
-  .wrapper:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("http://remtsoy.com/experiments/user_card/img/food.png");
-    z-index: 2;
-    opacity: 0.3;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    filter: alpha(opacity=30);
-  }
+
+
   .wrapper-inner {
     position: relative;
     z-index: 3;
@@ -51,12 +24,12 @@
     transform: translate(-50%, -50%);
     margin-top: 40px;
     z-index: 1;
+    
   }
   .box {
     position: relative;
-    border-radius: 8px;
-    box-shadow: 0 4px 1px rgba(0,0,0,0.1);
-    width: 366px;
+    border-radius: 10px;
+    width: 370px;
     background: rgb(249, 249, 245);
     box-shadow: 0 2px 5px #000;
     text-align: center;
@@ -69,7 +42,7 @@
   .avatar {
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    -webkit-box-shadow: 0 0 0 3px #48ee06 , 0 0 0 8px rgb(128, 106, 106);
+    -webkit-box-shadow: 0 4px 2px 3px #48ee06 , 0 2px 5px 8px rgb(41, 174, 26);
     box-shadow: 0 0 0 3px #031891 , 0 0 0 8px rgb(151, 58, 58);
     top: -75px;
     margin-left: -75px;
@@ -87,9 +60,8 @@
   .name,
   .occupation,
   .followers-title{
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    margin-top: 0;
+    font-weight: 500;
+    margin-top: 5px;
     margin-bottom: 15px;
   }
   .name,
@@ -98,20 +70,20 @@
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 2px;
-    color: #f15107;
+    color: #990000;
   }
   .occupation {
-    font-size: 20px;
+    font-size: 15px;
     font-weight:bolder;
     font-style: italic;
-    color: #cc5017;
+    color: #990000;
     margin-bottom: 2px;
   }
   .location {
-    color: #aa4c20;
-    font-size: 14px;
+    color: #990000;
+    font-size: 12px;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-bottom: 15px;
     border-bottom: 1px solid green;
   }
@@ -124,7 +96,6 @@
   
   .location img{
     height: 15px;
-    background-color:#13e42f;
     padding: 2px;
     border-radius: 2px;
   }
@@ -132,14 +103,14 @@
   
   .location a {
     text-decoration: none;
-    font-size:medium;
+    font-size: 1.0rem;
     font-style: italic;
     font-weight: 800;
-    color: #f15107;
+    color: #990000;
   }
   .followers-title {
     font-size: 30px;
-    color: #f15107;
+    color: #990000;
     margin-bottom: 5px;
   }
   .followers-list {
@@ -158,7 +129,6 @@
   }
   .followers-list > li a {
     display: block;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -170,24 +140,15 @@
     text-decoration: none;
   }
   .followers-list > li a img {
-    -webkit-border-radius: 50%;
+    
     border-radius: 50%;
     width: 35px;
     display: block;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    -ms-transition: 0.3s;
-    transition: 0.3s;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
     height: 45px;
     background-color: #13e42f;
     padding: 12%;
     border-radius: 15%;
-    box-shadow: -1rem 0 1rem #000;
+    box-shadow: 1px 4px 10px #000;
   }
   .followers-list > li a:hover img {
     transform: translateY(-5px);
