@@ -6,6 +6,21 @@
     background: #fff;
     animation: gradient 15s ease infinite;
   }
+.wrapper{
+  animation: updown 6s linear infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
 
 
   .wrapper-inner {
