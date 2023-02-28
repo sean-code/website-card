@@ -145,13 +145,10 @@
   .followers-list > li a {
     display: block;
     border-radius: 50%;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    -ms-transition: 0.3s;
     transition: 0.3s;
     height: 45px;
-    width: 45px;
+    width: 40px;
+    padding: 2px;
     text-decoration: none;
   }
   .followers-list > li a img {
@@ -200,4 +197,26 @@
     font-size: large;
     font-weight: 800;
     cursor: grab;
+  }
+
+  /*  Media Queries */
+
+  @media (max-width: 500px) {
+    .wrapper{
+      margin-top: 80%;
+    }
+
+  }
+
+  @media (min-width: 501px) and (max-width: 900px) {
+    .wrapper{
+      margin-top: 45%;
+    }
+  }
+
+
+  @media (min-width: 901px) and (max-width: 2000px) {
+    .wrapper{
+      margin-top: 25%;
+    }
   }

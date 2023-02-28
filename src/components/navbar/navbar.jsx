@@ -13,12 +13,12 @@ const NavBar = () =>{
                         <span className="line line3"></span>
                     </div>
                     <ul className="menu-items">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        {/* <li><a href="#food">Category</a></li> */}
-                        <li><a href="#food-menu">Shop</a></li>
-                        <li><a href="#testimonials">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                        <li><a href="/portfolio">Portfolio</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                     <h1 className="logo">Sean Nganga</h1>
                 </div>
