@@ -26,10 +26,10 @@ const NavBar = () =>{
               &times;
             </a>
           </span>
-          <a href="#home" onClick={closeNav} id="home-link">
+          <a href="/" onClick={closeNav} id="home-link">
             Home
           </a>
-          <a href="#about" onClick={closeNav} id="about-link">
+          <a href="/about" onClick={closeNav} id="about-link">
             About
           </a>
           <a href="#works" onClick={closeNav} id="works-link">
