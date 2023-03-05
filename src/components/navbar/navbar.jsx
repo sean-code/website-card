@@ -1,29 +1,60 @@
+import React, { useState } from 'react';
 import './navbar.css';
 
 
+
 const NavBar = () =>{
-    return(
-        <>
-            <nav className="navbar">
-                <div className="navbar-container container">
-                <input type="checkbox" name="" id="" />
-                    <div className="hamburger-lines">
-                        <span className="line line1"></span>
-                        <span className="line line2"></span>
-                        <span className="line line3"></span>
-                    </div>
-                    <ul className="menu-items">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/shop">Shop</a></li>
-                        <li><a href="/portfolio">Portfolio</a></li>
-                        <li><a href="/contact">Contact</a></li>
-                    </ul>
-                    <h1 className="logo">Sean Nganga</h1>
-                </div>
-            </nav>
-        </>
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    function openNav() {
+      document.getElementById('mySidenav').style.width = '30%'; //opens side navbar by 50 percent
+      document.getElementById('backdrop').style.display = 'block'; //displays overlay
+      setIsNavOpen(true);
+    }
+  
+    function closeNav() {
+      document.getElementById('mySidenav').style.width = '0';
+      document.getElementById('backdrop').style.display = 'none';
+      setIsNavOpen(false);
+    }
+  
+    return (
+      <div>
+        <div className={`sidenav-container ${isNavOpen ? 'open' : ''}`} id="mySidenav">
+          <span className="drawer-close-button">
+            <a href="#" className="closebtn" onClick={closeNav}>
+              &times;
+            </a>
+          </span>
+          <a href="#home" onClick={closeNav} id="home-link">
+            Home
+          </a>
+          <a href="#about" onClick={closeNav} id="about-link">
+            About
+          </a>
+          <a href="#works" onClick={closeNav} id="works-link">
+            Shop
+          </a>
+          <a href="#portfolio" onClick={closeNav} id="contact-link">
+            Portfolio
+          </a>
+          <a href="#contact" onClick={closeNav} id="contact-link">
+            Contact
+          </a>
+        </div>
+  
+        <div
+          className={`backdrop-container ${isNavOpen ? 'open' : ''}`}
+          id="backdrop"
+          onClick={closeNav}
+        />
+  
+        <nav>
+          <span className="mobile-nav-open-icon" onClick={openNav}>
+            &#9776;
+          </span>
+        </nav>
+      </div>
     )
 }
 
